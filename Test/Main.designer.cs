@@ -51,6 +51,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -70,7 +71,6 @@
             this.dgv.TabIndex = 1;
             this.dgv.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_CellMouseDown);
             this.dgv.CellMouseMove += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_CellMouseMove);
-            this.dgv.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellValueChanged);
             this.dgv.SelectionChanged += new System.EventHandler(this.dgv_SelectionChanged);
             this.dgv.DragDrop += new System.Windows.Forms.DragEventHandler(this.dgv_DragDrop);
             this.dgv.DragEnter += new System.Windows.Forms.DragEventHandler(this.dgv_DragEnter);
@@ -246,6 +246,7 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "生成";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -265,11 +266,23 @@
             this.label10.TabIndex = 24;
             this.label10.Text = "v1.0.0 20141126";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(538, 295);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(53, 12);
+            this.linkLabel1.TabIndex = 25;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "检查更新";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(758, 325);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
@@ -281,7 +294,7 @@
             this.MinimizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "iTesterConfigBuilder";
+            this.Text = "iTesterConfigBuilder v1.0.0";
             this.Load += new System.EventHandler(this.FrmDGVRowMove_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -316,5 +329,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
