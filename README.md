@@ -12,7 +12,7 @@ iTester的config档生成器，为了产线自动化测试需要
 * 测试时拷贝到机器内部SD卡or外部SD卡or外置U盘的根目录即可
 
 ##截图
-
+![pic](https://raw.githubusercontent.com/li-yu/iTesterConfigBuilder/master/screenshot.jpg)
 ##说明
 本测试工具为iTester的配套工具，IDE为VS，C#语言写的，功能比较简单
 
