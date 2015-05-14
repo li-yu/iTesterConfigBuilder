@@ -10,6 +10,7 @@ iTester的config档生成器，为了产线自动化测试需要
 * 设定测试项目的测试细节
 * 设置完成后一键生成配置档：iTester.xml
 * 测试时拷贝到机器内部SD卡or外部SD卡or外置U盘的根目录即可
+* exe[下载](http://liyuyu.cn/myapps/ConfigBuilder.zip)
 
 ##截图
 ![pic](https://raw.githubusercontent.com/li-yu/iTesterConfigBuilder/master/screenshot.jpg)
